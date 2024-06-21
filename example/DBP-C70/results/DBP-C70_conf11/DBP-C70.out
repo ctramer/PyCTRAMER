@@ -1,0 +1,206 @@
+        #######################################
+        #              PyCTRAMER              #
+        #######################################
+
+==> STEP 1: SubmitQC
+Input: 
+solute structure:  /gpfsnyu/xspace/projects/PCT-example/DBP-C70/structure/DBP-C70_conf11.xyz
+Job submit script:
+Quantum chemistry: /gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/
+SLURM script:
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/submitQC_flexible*.slurm 
+QChem input file:
+ /gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/DBP-C70_conf11.inp 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/mulliken/DBP-C70_conf11.inp 
+Output: 
+    QChem output file: 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/DBP-C70_conf11.out 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/DBP-C70_conf11.fchk 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/mulliken/DBP-C70_conf11.out 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/mulliken/DBP-C70_conf11.fchk 
+#######################################################
+
+==> STEP 2: AnalyzeQC 
+Input: 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/DBP-C70_conf11.out 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/DBP-C70_conf11.fchk 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/dens_ana.in 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/dens_ana_fchk.in 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/dens_ana_tddft.in 
+
+Job submit script: 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/analyzeQC_flexible1.sh 
+
+Output: 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/tden_summ.txt 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/tden_summ_fchk.txt 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/tden_summ_tddft.txt 
+#######################################################
+
+==> STEP 3: ConstructFF
+Input: 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/
+DBP-C70_conf11.out
+DBP-C70_conf11.fchk
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC//mulliken/DBP-C70_conf11.out
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/tden_summ_fchk.txt
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/tden_summ_tddft.txt
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/packmol.inp
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/tleap.in
+
+Job submit script: 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/construct_prmtop_inter.sh
+
+Output: 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/leap.log/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/FCD_coupling_raw.txt/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC//charge_GR_DBP-C70_conf11.txt
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC//charge_LE_DBP-C70_conf11.txt
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC//charge_CT1_DBP-C70_conf11.txt
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC//charge_CT2_DBP-C70_conf11.txt
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC//charge_CT3_DBP-C70_conf11.txt
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC//charge_CT4_DBP-C70_conf11.txt
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC//charge_CT5_DBP-C70_conf11.txt
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC//charge_CT6_DBP-C70_conf11.txt
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/DBP-C70_conf11_DBPC70.prmtopDBP-C70_conf11_DBPC70_GR.txt
+DBP-C70_conf11_DBPC70_LE.txt
+DBP-C70_conf11_DBPC70_CT1.txt
+DBP-C70_conf11_DBPC70_CT2.txt
+DBP-C70_conf11_DBPC70_CT3.txt
+DBP-C70_conf11_DBPC70_CT4.txt
+DBP-C70_conf11_DBPC70_CT5.txt
+DBP-C70_conf11_DBPC70_CT6.txt
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC/DBP-C70_conf11_DBPC70.inpcrd 
+
+==> Summary of calculation:
+
+==> State characteristic analysis (TheoDORE)
+,state,dE(eV),f,Om,POS,PR,CT,COH,CTnt,PRNTO,Z_HE,RMSeh,H_1,E_1,H_2,E_2
+0,S_1,1.506,0.006,1.0,1.502,1.015,0.985,1.015,-0.985,1.015,1.053,7.294,0.005,0.99,0.995,0.01
+1,S_2,1.824,0.002,1.0,1.497,1.015,0.985,1.015,-0.985,1.036,1.105,8.021,0.011,0.995,0.989,0.005
+2,S_3,2.096,0.038,1.0,1.51,1.052,0.95,1.052,-0.95,1.036,1.114,8.961,0.016,0.965,0.984,0.035
+3,S_4,2.163,0.017,1.0,1.043,1.091,0.017,1.019,-0.013,1.814,2.662,4.693,0.95,0.963,0.05,0.037
+4,S_5,2.236,1.106,1.0,1.892,1.24,0.055,1.067,-0.051,1.328,1.956,5.909,0.083,0.133,0.917,0.867
+5,S_6,2.39,0.05,1.0,1.026,1.054,0.018,1.019,-0.016,1.265,1.763,5.031,0.966,0.982,0.034,0.018
+6,S_7,2.468,0.041,1.0,1.014,1.028,0.021,1.021,-0.017,2.0,2.575,4.801,0.978,0.995,0.022,0.005
+7,S_8,2.474,0.02,1.0,1.007,1.014,0.011,1.011,-0.008,2.35,3.111,4.702,0.989,0.997,0.011,0.003
+8,S_9,2.53,0.067,1.0,1.025,1.051,0.027,1.028,-0.023,1.81,2.585,4.906,0.964,0.987,0.036,0.013
+9,S_10,2.551,0.034,1.0,1.014,1.029,0.019,1.02,-0.017,1.808,2.549,5.181,0.978,0.994,0.022,0.006
+10,S_11,2.598,0.008,1.0,1.494,1.047,0.955,1.047,-0.954,1.205,1.471,7.429,0.028,0.983,0.972,0.017
+11,S_12,2.622,0.01,1.0,1.005,1.011,0.009,1.009,-0.006,1.609,2.267,5.088,0.992,0.997,0.008,0.003
+12,S_13,2.656,0.031,1.0,1.01,1.019,0.018,1.019,-0.015,1.625,2.31,4.849,0.983,0.998,0.017,0.002
+13,S_14,2.681,0.018,1.0,1.217,1.486,0.423,1.333,-0.422,2.504,3.292,6.314,0.572,0.994,0.428,0.006
+14,S_15,2.706,0.002,1.0,1.149,1.357,0.286,1.263,-0.284,2.738,3.442,5.9,0.709,0.993,0.291,0.007
+15,S_16,2.726,0.016,1.0,1.04,1.087,0.077,1.077,-0.073,2.536,3.467,4.972,0.923,0.996,0.077,0.004
+16,S_17,2.781,0.007,1.0,1.128,1.304,0.229,1.226,-0.227,2.048,2.897,5.46,0.758,0.985,0.242,0.015
+17,S_18,2.793,0.0,1.0,1.008,1.016,0.015,1.015,-0.013,1.767,2.484,4.694,0.985,0.998,0.015,0.002
+18,S_19,2.81,0.006,1.0,1.499,1.15,0.86,1.16,-0.86,1.249,1.653,7.319,0.071,0.931,0.929,0.069
+19,S_20,2.846,0.013,1.0,1.037,1.078,0.053,1.055,-0.051,2.918,3.887,4.857,0.938,0.989,0.062,0.011
+20,S_21,2.899,0.003,1.0,1.65,1.828,0.081,1.155,-0.078,2.294,3.564,5.358,0.311,0.389,0.689,0.611
+21,S_22,2.902,0.003,1.0,1.3,1.724,0.041,1.073,-0.038,3.866,4.937,4.99,0.68,0.719,0.32,0.281
+22,S_23,2.946,0.002,1.0,1.026,1.055,0.051,1.052,-0.048,1.875,2.738,4.784,0.95,0.997,0.05,0.003
+23,S_24,2.962,0.009,1.0,1.149,1.358,0.274,1.261,-0.273,2.116,3.046,5.981,0.714,0.987,0.286,0.013
+24,S_25,2.965,0.002,1.0,1.011,1.022,0.017,1.017,-0.015,2.556,3.281,4.646,0.982,0.996,0.018,0.004
+
+==> States considered in Marcus rate calculation: 
+State, Excitation Energy (eV) 
+GR,0.0
+LE,2.236
+CT1,1.506
+CT2,1.824
+CT3,2.096
+CT4,2.598
+CT5,2.681
+CT6,2.706
+==> CT States: Charge Transfer Amounts 
+
+==> FCD Coupling in eV 
+CT1LE:[-0.04043482]
+CT2LE:[0.00400705]
+CT2CT1:[0.1590534]
+CT3LE:[0.02612564]
+CT3CT1:[0.1468927]
+CT3CT2:[-0.02020224]
+CT4LE:[0.02931668]
+CT4CT1:[-0.2025499]
+CT4CT2:[0.1087632]
+CT4CT3:[-0.2493437]
+CT5LE:[0.02952592]
+CT5CT1:[0.03174261]
+CT5CT2:[0.01722318]
+CT5CT3:[-0.01363823]
+CT5CT4:[0.003959772]
+CT6LE:[-0.02436652]
+CT6CT1:[0.02018275]
+CT6CT2:[-0.0132896]
+CT6CT3:[-0.02460453]
+CT6CT4:[-0.0038949]
+CT6CT5:[-0.01238992]
+#######################################################
+
+==> STEP 4: RunMD
+Input: 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/MD/
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/MD//*.in
+*=min,heat,equil_NPT,equil_NVE,sample_NVT,relax_NVE,prod_NVE
+Job submit script: 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/MD/cpujob_control.slurm
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/MD/gpujob_control.slurm
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/MD/master_control.slurm
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/MD/master_control.slurm
+Output: 
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/MD/
+/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/MD//Traj_LE/*.out 
+
+==> MD simulation details 
+N_traj:1
+MD_traj_state:LE
+solvent_resname:DBP,C70
+MD_dt:0.001
+sample_steps:5
+MD_temperature:300.0
+MD_steps:100000
+#######################################################
+
+==> STEP 5: MarcusAA  
+==> Marcus Rates Summary 
+transition,Excitation Energy (eV),Correction (eV),Coupling (eV),Er (eV),DeltaE (eV),all-atom Marcus rates (Hz)
+CT1,1.506,-0.5250202384799965,-0.04043482,0.028292741986652745,-0.9178011027117847,5.768257888859959e-104
+CT2,1.824,0.34428468376000354,0.00400705,0.032034378122331966,-0.5669532092790619,4.603889783800816e-26
+CT3,2.096,0.40085531256000095,0.02612564,0.03630634392478047,-0.2530964000005494,219541846.8459222
+CT4,2.598,1.1776535146999985,0.02931668,0.026266988369683508,0.1877210078608849,4236519.9507749025
+CT5,2.681,1.909534759620004,0.02952592,0.004866324351916006,0.36840647517939906,1.1794369532427474e-106
+CT6,2.706,2.346005725880002,-0.02436652,0.0025357403138733573,0.4086094014665311,2.1026652049020523e-266
+
+==> Target Transition 
+Transition between: LE-CT3
+System Hamiltonian (Hartree) 
+ 0.0 0.000960099559428644 
+0.000960099559428644 -0.00930112112597063 
+Rate: 219541846.8459222 Hz 
+Energy correction of the transition: 1.6284660503600032 eV 
+DeltaE = -0.2530964000005494 eV 
+LE excition energy = 0.506 eV 
+Diabatic coupling of the transition = 0.02612564eV 
+Er = 0.03630634392478047 eV 
+#######################################################
+
+==> STEP 6: SpinBoson
+Cuu data point number 400,  dt  = 0.005 ps
+Jw data point number 13930, dw  = 0.2cm^-1 
+SpinBoson model bath parameters /gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/SBMLECT.dat
+SpinBoson bath parameter file headers: w_SB, c_SB, Req_SB, Req_SB 
+#######################################################
+
+==> STEP 7: FGR 
+Spin Boson model for Linearized Semiclassical FGR Rates 
+Note: The 2 rate constants are from direct integral and FFT by order.
+QM  [1.29826944e+12 1.29826944e+12] Hz 
+W0  [6.04400008e+10 6.04400008e+10] Hz 
+CAV [8.35824031e+11 8.35824031e+11] Hz 
+CD  [1.81610897e+11 1.81610897e+11] Hz 
+C0  [2.19835593e+08 2.19835593e+08] Hz 
+Marcus-Levitch 60440000829.417244 Hz 
+Marcus Theory  219835592.91074967 Hz 
+#######################################################
+
+Job Ends at Fri Jun 21 11:35:05 2024

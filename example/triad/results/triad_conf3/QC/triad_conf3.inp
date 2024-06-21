@@ -1,0 +1,40 @@
+$molecule
+read                  triad_conf3.txt
+$end
+
+$rem
+JOBTYPE               sp        ! single point charge calculation
+EXCHANGE              general   !
+CORRELATION           none      !
+BASIS                 SV       !
+SYM_IGNORE            TRUE      !
+purecart              2111      !
+separate_jk           TRUE      !
+derscreen             FALSE     !
+ideriv                0         !
+OMEGA                 157       ! geometric parameter tuned for geometry
+MAX_SCF_CYCLES        5000      !
+scf_convergence       8         ! for SP, default is 5 ; for opt/freq, default is 8
+CIS_DYNAMIC_MEM       True      ! using dynamic memory for large TDDFT calculation
+MEM_STATIC            16000     ! static memory for storing data.
+MEM_TOTAL             180000    !
+max_cis_cycles        500000    !
+CIS_N_ROOTS           25        ! number of excited states
+CIS_SINGLETS          true      ! compute singlet excited states, default is true
+CIS_TRIPLETS          false     ! compute triplet excited states, default is true
+RPA                   false     ! false: TDA-DFT, true: TDA- and TDDFT , 2: TDDFT
+sts_fcd               true      ! compute electronic couplings with FCD method
+sts_donor             61-207    ! donor atom index
+sts_acceptor          1-60      ! acceptor atom index
+POP_MULLIKEN          -1        ! get Mulliken Charge for ground and excited states
+GUI                   2         ! for producing wavefunction .fchk file
+state_analysis        true      ! state analysis module
+MOLDEN_FORMAT         true      ! generate molden formatted NTO
+$end
+
+$xc_functional
+X HF 1.0
+X BNL 1.0
+C LYP 1.0
+$end
+

@@ -1,0 +1,23 @@
+## A DDDAAA heterojunction box with Box length of 60A, user can construct 
+# there own heterojunction structure at nanoscale 
+
+## All the atoms from different molecules will be separated at least 2.0
+
+tolerance 2.0
+
+# The file type and input type
+
+output triad_conf3_THF.pdb
+filetype pdb
+structure /gpfsnyu/xspace/projects/PCT-example/triad/structure/triad_conf3.pdb
+  number 1
+  centerofmass
+  fixed 50. 50. 50. 0. 0. 0.
+end structure
+
+structure /gpfsnyu/xspace/projects/PCT-example/triad/solvent/THF/THF.pdb
+  number 2700
+  inside box 0. 0. 0. 100. 100. 100.
+end structure
+
+

@@ -1,0 +1,27 @@
+source leaprc.protein.ff14SB
+source leaprc.gaff
+
+DBS = loadmol2  /gpfsnyu/xspace/projects/PCT-example/DBP-C70/structure/DBS/DBS.mol2    # /gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC//DBPC70.mol2
+loadamberparams     /gpfsnyu/xspace/projects/PCT-example/DBP-C70/structure/DBS/DBS.frcmod #/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC//DBPC70.frcmod
+
+C7S = loadmol2  /gpfsnyu/xspace/projects/PCT-example/DBP-C70/structure/C7S/C7S.mol2    # /gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC//DBP-C70_conf11.mol2
+loadamberparams  /gpfsnyu/xspace/projects/PCT-example/DBP-C70/structure/C7S/C7S.frcmod   # /gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC//DBP-C70_conf11.frcmod
+
+DBP = loadmol2   /gpfsnyu/xspace/projects/PCT-example/DBP-C70/structure/DBP/DBP.mol2
+loadamberparams   /gpfsnyu/xspace/projects/PCT-example/DBP-C70/structure/DBP/DBP.frcmod
+
+C70 = loadmol2  /gpfsnyu/xspace/projects/PCT-example/DBP-C70/structure/C70/C70.mol2
+loadamberparams   /gpfsnyu/xspace/projects/PCT-example/DBP-C70/structure/C70/C70.frcmod
+
+check C70
+check DBP
+check C7S
+check DBS
+
+com=loadpdb /gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/QC//DBP-C70_conf11_DBPC70.pdb
+setbox com centers
+
+savepdb com DBP-C70_conf11_solvated_in_DBPC70.pdb
+saveamberparm com DBP-C70_conf11_DBPC70.prmtop DBP-C70_conf11_DBPC70.inpcrd
+quit
+

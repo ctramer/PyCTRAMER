@@ -1,0 +1,41 @@
+Remark line goes here
+MASS
+
+BOND
+
+ANGLE
+ca-cp-cq   64.000     121.110   same as ca-cq-cq, penalty score=  1.0
+ca-cq-cp   64.000     121.110   same as ca-cp-cp, penalty score=  1.0
+cp-ca-cp   68.800     111.520   same as cp-ca-cq, penalty score=  2.6
+
+DIHE
+cp-cp-cq-cp   4    4.000       180.000           2.000      same as X -cp-cp-X , penalty score=103.0
+ca-cp-cq-cp   4    4.000       180.000           2.000      same as X -cp-cp-X , penalty score=103.0
+cq-cp-cq-ca   4    4.000       180.000           2.000      same as X -cq-cq-X , penalty score=103.0
+cq-cp-cq-cp   4    4.000       180.000           2.000      same as X -cp-cp-X , penalty score=103.0
+cq-cp-cq-cq   4    4.000       180.000           2.000      same as X -cq-cq-X , penalty score=103.0
+
+IMPROPER
+ca-ca-ca-ha         1.1          180.0         2.0          Using general improper torsional angle  X- X-ca-ha, penalty score=  6.0)
+ca-cp-ca-ha         1.1          180.0         2.0          Using general improper torsional angle  X- X-ca-ha, penalty score=  6.0)
+ca-ca-cp-cp         1.1          180.0         2.0          Same as c2-ca-ca-ca, penalty score=327.0)
+ca-cp-cp-cq         1.1          180.0         2.0          Same as ca-ca-cp-cp, penalty score= 43.4)
+ca-ca-ca-cp         1.1          180.0         2.0          Same as c2-ca-ca-ca, penalty score= 40.7)
+ca-ca-ca-cq         1.1          180.0         2.0          Same as ca-ca-ca-cp, penalty score= 16.5)
+ca-cp-cq-cq         1.1          180.0         2.0          Same as ca-ca-cp-cp, penalty score=191.9)
+ca-ca-cq-cq         1.1          180.0         2.0          Same as ca-cp-cq-cq, penalty score= 80.7)
+ca-cq-ca-ha         1.1          180.0         2.0          Using general improper torsional angle  X- X-ca-ha, penalty score=  6.0)
+cq-cq-cp-cq         1.1          180.0         2.0          Same as ca-cp-cp-cq, penalty score= 43.4)
+ca-ca-cq-cp         1.1          180.0         2.0          Same as ca-ca-cq-cq, penalty score= 53.8)
+ca-ca-ca-ca         1.1          180.0         2.0          Same as ca-ca-ca-cp, penalty score= 26.9)
+cp-cp-cp-cp         1.1          180.0         2.0          Same as ca-cp-cp-cq, penalty score= 43.4)
+ca-cp-cp-cp         1.1          180.0         2.0          Same as cp-cp-cp-cp, penalty score= 26.9)
+ca-ca-cp-cq         1.1          180.0         2.0          Same as ca-cp-cp-cp, penalty score= 43.4)
+cp-cp-cq-cp         1.1          180.0         2.0          Same as ca-cp-cq-cq, penalty score= 43.4)
+ca-cp-ca-cq         1.1          180.0         2.0          Same as ca-ca-ca-ca, penalty score= 53.8)
+ca-cp-ca-cp         1.1          180.0         2.0          Same as ca-cp-ca-cq, penalty score= 53.8)
+
+NONBON
+
+
+

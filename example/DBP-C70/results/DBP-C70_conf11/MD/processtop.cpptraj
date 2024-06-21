@@ -1,0 +1,4 @@
+parm DBP-C70_conf11_DBPC70_CT6.prmtop
+parmstrip :DBP
+parmstrip :C70
+parmwrite out DBP-C70_conf11_noDBPC70_CT6.prmtop

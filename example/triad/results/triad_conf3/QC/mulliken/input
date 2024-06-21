@@ -1,0 +1,12 @@
+NUM_TOT                             # Number of total atoms in system
+NUM_of_ACCEPTOR                    # Total number of acceptor fragments
+NUM_of_DONOR                          # Total number of donor fragments
+ATOMS_of_FRAGMENT              # Total number of atoms for each acceptor and donor fragment,(such as, Acc,Don,Don)
+DFT_LEVEL              1               # BNL:1, B3LYP:2, wPBEh:3, SRSH:4
+PHASE                  0               # GAS:0, PCM:1
+NUMEXS                 25              # Desired number of excited states
+BASISSET               SV              # SV, 6-31G*... consult to the literature
+DIEL                   7.6             # Dielectric value in PCM section; THF:7.6
+OPTDIEL                1.78            # Optical dielectric value in PCM section
+NOMEGA                 157             # If known! 157 for linear and 154 for bent. For now use 157 for all
+TUNOMEGA               0               # Enter 1 for tuning the omega for each geometry. Not implemented yet!!!

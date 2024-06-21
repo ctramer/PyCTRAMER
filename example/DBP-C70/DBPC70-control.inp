@@ -1,0 +1,72 @@
+# Job settings
+project          DBP-C70
+workflow         alltheway #alltheway / Marcus / FGR
+caseid           conf11
+CT_type          inter 
+work_dir         /gpfsnyu/xspace/projects/PCT-example/DBP-C70/results 
+structure_dir    /gpfsnyu/xspace/projects/PCT-example/DBP-C70/structure
+template_dir     /gpfsnyu/xspace/projects/PCT-example/DBP-C70/template
+skip_QC          false
+skip_FF          false
+skip_MD          false
+output_filename  DBP-C70.out
+
+# QC settings
+QChem_version    6 # 4 / 6
+QC_method        wB97XD
+basis_set        SV
+charge           0
+multiplicity     1
+N_cis            25      # number of singlet excited states 
+charge_type      Mulliken
+TD_approx        TDA
+RSH_omega                # or empty 
+DA_type          DA      #     DBA / DA / [ADA]
+Max_CT_states    6       # for DBP-C70
+N_atom           170     # number of atoms for solute 
+D_range          71-170     
+B_range                  # or A1_range for ADA or empty for DA or intra CT
+A_range          1-70    # or A2_range for ADA
+A1_range                 
+A2_range                 
+CT_donor_fragments    2
+CT_acceptor_fragments 1
+Include_bCT_states    initial # final, initial_or_final
+LE_fragment           2
+CT_amount_threshold   0.25
+OS_threshold          0.1
+LE_position_threshold 0.2
+
+# MD settings
+solute_resname   DBS,C7S #/ TRI  # pdb only allows 3 letter/numeric (different from amino acids)
+solute_N_atom    100,70  #/ 207
+solvent_resname  DBP,C70 #/ THF
+solvent_N_atom   100,70  #/ 13
+solvent_N_mole   75,75   #/ 2700
+solvent_dir      /gpfsnyu/xspace/projects/PCT-example/DBP-C70/structure/DBP,/gpfsnyu/xspace/projects/PCT-example/DBP-C70/structure/C70
+solute_dir       /gpfsnyu/xspace/projects/PCT-example/DBP-C70/structure/DBS,/gpfsnyu/xspace/projects/PCT-example/DBP-C70/structure/C7S
+MD_box_length    100    # Angstrom
+
+MD_traj_state    LE    # GR
+N_traj           1     # default = 1
+MD_steps         100000 # steps
+MD_dt            0.001 # ps
+sample_steps     5     # generate snapshot every "sample_steps" steps
+MD_temperature   300.0 # K
+
+# Marcus only writing
+# Ene_list         0,2.236,1.506,1.824,2.096,2.598,2.681,2.706
+# State_list       GR,LE,CT1,CT2,CT3,CT4,CT5,CT6
+# State_order      0,5,1,2,3,11,14,15
+# coupling_list    0,0,-0.04043482,0,0.00400705,0.1590534,0,0.02612564,0.1468927,-0.02020224,0,0.02931668,-0.2025499,0.1087632,-0.2493437,0,0.02952592,0.03174261,0.01722318,-0.01363823,0.003959772,0,-0.02436652,0.02018275,-0.0132896,-0.02460453,-0.0038949,-0.01238992
+
+# FGR setting
+FGR_approx       all   # exact / WAV / CAV / ...
+spin_boson_modes 40
+TCF_corr_length  2     # ps 
+TCF_DT           0.005 # ps 
+temperature      300   # K
+energy_traj_file # only required for workflow=FGR
+load_model_file  # load SPM parameters file
+save_model_file  # save SPM model (save and load don't appear at the same time)
+

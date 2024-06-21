@@ -1,0 +1,44 @@
+Remark line goes here
+MASS
+
+BOND
+
+ANGLE
+cp-cq-cp   72.200      90.000   same as cp-cp-cp, penalty score=  1.0
+ca-cp-cq   64.090     121.130   same as ca-cq-cq, penalty score=  1.0
+ca-cq-cp   64.090     121.130   same as ca-cp-cp, penalty score=  1.0
+cq-cp-cq   72.200      90.000   same as cq-cq-cq, penalty score=  1.0
+cp-ca-cq   67.160     119.070   same as ca-ca-cq, penalty score=  2.8
+cp-ca-cp   67.160     119.070   same as ca-ca-cp, penalty score=  2.8
+
+DIHE
+cp-cp-cq-cp   4    4.000       180.000           2.000      same as X -cp-cp-X , penalty score=103.0
+cq-cp-cq-cp   4    4.000       180.000           2.000      same as X -cq-cq-X , penalty score=103.0
+ca-cp-cq-cp   4    4.000       180.000           2.000      same as X -cq-cq-X , penalty score=103.0
+cq-cp-cq-ca   4    4.000       180.000           2.000      same as X -cq-cq-X , penalty score=103.0
+cq-cp-cq-cq   4    4.000       180.000           2.000      same as X -cq-cq-X , penalty score=103.0
+
+IMPROPER
+ca-ca-ca-ha         1.1          180.0         2.0          Using general improper torsional angle  X- X-ca-ha, penalty score=  6.0)
+ca-cp-ca-ha         1.1          180.0         2.0          Using general improper torsional angle  X- X-ca-ha, penalty score=  6.0)
+ca-ca-cp-cp         1.1          180.0         2.0          Using the default value
+ca-cp-cp-cq         1.1          180.0         2.0          Using the default value
+ca-ca-ca-cp         1.1          180.0         2.0          Using the default value
+ca-ca-ca-cq         1.1          180.0         2.0          Using the default value
+ca-cp-cq-cq         1.1          180.0         2.0          Using the default value
+ca-ca-cq-cq         1.1          180.0         2.0          Using the default value
+ca-cq-ca-ha         1.1          180.0         2.0          Using general improper torsional angle  X- X-ca-ha, penalty score=  6.0)
+cq-cq-cp-cq         1.1          180.0         2.0          Using the default value
+ca-ca-cq-cp         1.1          180.0         2.0          Using the default value
+ca-ca-ca-ca         1.1          180.0         2.0          Using the default value
+cp-cp-cp-cp         1.1          180.0         2.0          Using the default value
+ca-cp-cp-cp         1.1          180.0         2.0          Using the default value
+ca-ca-cp-cq         1.1          180.0         2.0          Using the default value
+cp-cp-cq-cp         1.1          180.0         2.0          Using the default value
+ca-cp-ca-cq         1.1          180.0         2.0          Using the default value
+ca-cp-ca-cp         1.1          180.0         2.0          Using the default value
+
+NONBON
+
+
+

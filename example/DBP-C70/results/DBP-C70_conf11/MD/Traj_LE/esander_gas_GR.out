@@ -1,0 +1,94 @@
+
+CPPTRAJ: Trajectory Analysis. V6.18.1 (AmberTools) MPI
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Running on 1 processes.
+| Date/time: 06/21/24 11:34:48
+| Available memory: 720.652 GB
+
+INPUT: Reading input from 'esander_gas_GR.in'
+  [parm /gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/MD//DBP-C70_conf11_noDBPC70_GR.prmtop]
+	Reading '/gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/MD//DBP-C70_conf11_noDBPC70_GR.prmtop' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin DBP-C70_conf11_noDBPC70_NVT_0.rst]
+	Reading 'DBP-C70_conf11_noDBPC70_NVT_0.rst' as Amber Restart
+  [esander GR out DBP-C70_conf11_GAS_GR_LE_NVT.dat ntb 1 cut 9 ntf 2 ntc 2]
+    ESANDER: Calculating energy using Sander.
+	Temporary topology file name is 'cpptrajtmp0'
+	Reference for initialization will be first frame.
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: DBP-C70_conf11_noDBPC70_GR.prmtop, 170 atoms, 2 res, box: Orthorhombic, 2 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'DBP-C70_conf11_noDBPC70_NVT_0.rst' is an AMBER restart file with velocity info, Parm DBP-C70_conf11_noDBPC70_GR.prmtop (Orthorhombic box) (reading 1 of 1)
+  Coordinate processing will occur on 1 frames.
+
+PARALLEL INFO:
+  Process 0 will handle 1 frames.
+.....................................................
+ACTION SETUP FOR PARM 'DBP-C70_conf11_noDBPC70_GR.prmtop' (1 actions):
+  0: [esander GR out DBP-C70_conf11_GAS_GR_LE_NVT.dat ntb 1 cut 9 ntf 2 ntc 2]
+
+BEGIN PARALLEL TRAJECTORY PROCESSING:
+	Writing topology 0 (DBP-C70_conf11_noDBPC70_GR.prmtop) to 'cpptrajtmp0' with format Amber Topology
+	Memory used by full exclusion list: 4.676 kB
+    SANDER INPUT OPTIONS:
+      extdiel=  78.50  intdiel=   1.00  rgbmax=   25.00  saltcon=   0.00  cut=      9.00
+      dielc=     1.00  rdt=       0.00  fswitch=  -1.00  igb=          0  alpb=        0
+      gbsa=         0  ntb=          1  lj1264=      -1  ipb=          0  inp=         2
+      vdwmeth=      1  ew_type=      0  ifqnt=        0  jfastw=       0  ntf=         2
+      ntc=          2
+	Saving the following energy terms:
+	  Total in 'GR[total]'
+	  VDW in 'GR[vdw]'
+	  Elec in 'GR[elec]'
+	  Bond in 'GR[bond]'
+	  Angle in 'GR[angle]'
+	  Dihedral in 'GR[dihedral]'
+	  VDW14 in 'GR[vdw14]'
+	  Elec14 in 'GR[elec14]'
+100% Complete.
+TIME: Rank 0 throughput= 27.7840 frames / second.
+TIME: Avg. throughput= 27.7816 frames / second.
+
+ACTION OUTPUT:
+TIME: Analyses took 0.0000 seconds.
+
+DATASETS (8 total):
+	GR[total] "GR[total]" (double), size is 1 (0.008 kB)
+	GR[vdw] "GR[vdw]" (double), size is 1 (0.008 kB)
+	GR[elec] "GR[elec]" (double), size is 1 (0.008 kB)
+	GR[bond] "GR[bond]" (double), size is 1 (0.008 kB)
+	GR[angle] "GR[angle]" (double), size is 1 (0.008 kB)
+	GR[dihedral] "GR[dihedral]" (double), size is 1 (0.008 kB)
+	GR[vdw14] "GR[vdw14]" (double), size is 1 (0.008 kB)
+	GR[elec14] "GR[elec14]" (double), size is 1 (0.008 kB)
+    Total data set memory usage is at least 0.064 kB
+
+DATAFILES (1 total):
+  DBP-C70_conf11_GAS_GR_LE_NVT.dat (Standard Data File):  GR[total] GR[vdw] GR[elec] GR[bond] GR[angle] GR[dihedral] GR[vdw14] GR[elec14]
+
+RUN TIMING:
+TIME:		Init               : 0.0002 s (  0.53%)
+TIME:		Trajectory Process : 0.0360 s ( 86.01%)
+TIME:		Data Set Sync      : 0.0000 s (  0.00%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.0048 s ( 11.39%)
+TIME:		Other              : 0.0009 s (  0.02%)
+TIME:	Run Total 0.0419 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 0.0831 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+Daniel R. Roe and Thomas E. Cheatham, III, "Parallelization of CPPTRAJ enables
+  large scale analysis of molecular dynamics trajectory data". J. Comp.
+  Chem., 2018, DOI: 10.1002/jcc25382.
+

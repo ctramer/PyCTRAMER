@@ -1,0 +1,41 @@
+Excited state order  0
+Excited state order  2.236
+Excited state order  1.506
+Excited state order  1.824
+Excited state order  2.096
+Excited state order  2.598
+Excited state order  2.681
+Excited state order  2.706
+
+GR 0
+LE 2.236
+CT1 1.506
+CT2 1.824
+CT3 2.096
+CT4 2.598
+CT5 2.681
+CT6 2.706
+
+Excited state energies in eV  
+Excited energy of the state GR is 0 eV. 
+Excited energy of the state LE is 2.236 eV. 
+Excited energy of the state CT1 is 1.506 eV. 
+Excited energy of the state CT2 is 1.824 eV. 
+Excited energy of the state CT3 is 2.096 eV. 
+Excited energy of the state CT4 is 2.598 eV. 
+Excited energy of the state CT5 is 2.681 eV. 
+Excited energy of the state CT6 is 2.706 eV. 
+
+diabatic coupling in eV  Coupling between transition of LE-CT1 is -0.04043482 eV. 
+ Coupling between transition of LE-CT2 is 0.00400705 eV. 
+ Coupling between transition of LE-CT3 is 0.02612564 eV. 
+ Coupling between transition of LE-CT4 is 0.02931668 eV. 
+ Coupling between transition of LE-CT5 is 0.02952592 eV. 
+ Coupling between transition of LE-CT6 is -0.02436652 eV. 
+ Rates in Hz  Marcus rates at 300.0 between transition of LE-CT1 is 5.768257888859959e-116 THz. 
+ Marcus rates at 300.0 between transition of LE-CT2 is 4.603889783800816e-38 THz. 
+ Marcus rates at 300.0 between transition of LE-CT3 is 0.0002195418468459222 THz. 
+ Marcus rates at 300.0 between transition of LE-CT4 is 4.236519950774903e-06 THz. 
+ Marcus rates at 300.0 between transition of LE-CT5 is 1.1794369532427474e-118 THz. 
+ Marcus rates at 300.0 between transition of LE-CT6 is 2.1026652049020525e-278 THz. 
+ 

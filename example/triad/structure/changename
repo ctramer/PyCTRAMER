@@ -1,0 +1,4 @@
+for post in xyz txt pdb inp 
+do 
+mv original_set_35.${post}  triad_conf3.${post}
+done 

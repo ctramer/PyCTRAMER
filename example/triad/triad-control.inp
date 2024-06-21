@@ -1,0 +1,67 @@
+# Job settings
+project          triad
+workflow         alltheway #alltheway / Marcus / FGR
+caseid           conf3
+CT_type          intra  
+work_dir         /gpfsnyu/xspace/projects/PCT-example/triad/results
+structure_dir    /gpfsnyu/xspace/projects/PCT-example/triad/structure
+template_dir     /gpfsnyu/xspace/projects/PCT-example/triad/template
+skip_QC          false
+skip_FF          false
+skip_MD          false
+output_filename  triad-conf3.out
+
+# QC settings
+QChem_version    4 # 6 # 4 / 6
+QC_method        BNL  #wB97XD
+basis_set        SV
+charge           0
+multiplicity     1
+N_cis            25      # number of singlet excited states 
+charge_type      Mulliken
+TD_approx        TDA
+RSH_omega        157     # or empty 
+DA_type          DBA     # DBA / DA / [ADA]
+Max_CT_states    2       # for DBP-C70
+N_atom           207     # number of atoms for solute 
+D_range          136-207     
+B_range          61-135  # or A1_range for ADA or empty for DA or intra CT
+A_range          1-60    # or A2_range for ADA
+A1_range                 
+A2_range                 
+CT_donor_fragments    2,3
+CT_acceptor_fragments 1
+Include_bCT_states    initial # final, initial_or_final
+LE_fragment           2
+CT_amount_threshold   0.25
+OS_threshold          0.1
+LE_position_threshold 0.2
+
+# MD settings
+solute_resname   TRI  # pdb only allows 3 letter/numeric (different from amino acids)
+solute_N_atom    207
+solvent_resname  THF
+solvent_N_atom   13
+solvent_N_mole   2700
+solvent_dir      /gpfsnyu/xspace/projects/PCT-example/triad/solvent/THF 
+solute_dir       /gpfsnyu/xspace/projects/PCT-example/triad/structure
+MD_box_length    70    # Angstrom
+
+MD_traj_state    LE    #/ GR
+N_traj           1     # default = 1
+MD_steps         100000  # steps
+MD_dt            0.001 # ps
+sample_steps     5     # generate snapshot every "sample_steps" steps
+MD_temperature   300.0 # K
+
+# FGR setting
+FGR_approx       all   # exact / WAV / CAV / ...
+spin_boson_modes 40
+TCF_corr_length  2     # ps 
+TCF_DT           0.005 # ps 
+temperature      300   # K
+energy_traj_file # only required for workflow=FGR
+load_model_file  # load SPM parameters file
+save_model_file  # save SPM model (save and load don't appear at the same time)
+
+
