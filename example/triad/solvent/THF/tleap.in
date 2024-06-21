@@ -1,0 +1,19 @@
+source leaprc.protein.ff14SB
+source leaprc.gaff
+
+THF = loadmol2      /xspace1/projects/CT_Landscape/data//original_set/QC//original_set_80_BNL_25states_w157/THF.mol2
+loadamberparams     /xspace1/projects/CT_Landscape/data//original_set/QC//original_set_80_BNL_25states_w157/THF.frcmod
+
+TRI = loadmol2      /xspace1/projects/CT_Landscape/data//original_set/QC//original_set_80_BNL_25states_w157/original_set_80.mol2
+loadamberparams     /xspace1/projects/CT_Landscape/data//original_set/QC//original_set_80_BNL_25states_w157/original_set_80.frcmod
+
+check THF
+check TRI
+
+com=loadpdb /xspace1/projects/CT_Landscape/data//original_set/QC//original_set_80_BNL_25states_w157/original_set_80_THF.pdb
+setbox com centers
+
+savepdb com original_set_80_solvated_in_THF.pdb
+saveamberparm com original_set_80_THF.prmtop original_set_80_THF.inpcrd
+quit
+

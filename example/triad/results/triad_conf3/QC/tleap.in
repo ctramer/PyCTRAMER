@@ -1,0 +1,19 @@
+source leaprc.protein.ff14SB
+source leaprc.gaff
+
+TRI = loadmol2  /gpfsnyu/xspace/projects/PCT-example/triad/structure/TRI.mol2    # /gpfsnyu/xspace/projects/PCT-example/triad/results/triad_conf3/QC//THF.mol2
+loadamberparams     /gpfsnyu/xspace/projects/PCT-example/triad/structure/TRI.frcmod #/gpfsnyu/xspace/projects/PCT-example/triad/results/triad_conf3/QC//THF.frcmod
+
+THF = loadmol2   /gpfsnyu/xspace/projects/PCT-example/triad/solvent/THF/THF.mol2
+loadamberparams   /gpfsnyu/xspace/projects/PCT-example/triad/solvent/THF/THF.frcmod
+
+check THF
+check TRI
+
+com=loadpdb /gpfsnyu/xspace/projects/PCT-example/triad/results/triad_conf3/QC//triad_conf3_THF.pdb
+setbox com centers
+
+savepdb com triad_conf3_solvated_in_THF.pdb
+saveamberparm com triad_conf3_THF.prmtop triad_conf3_THF.inpcrd
+quit
+

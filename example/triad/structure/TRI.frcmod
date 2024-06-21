@@ -1,0 +1,102 @@
+Remark line goes here
+MASS
+
+BOND
+
+ANGLE
+cc-cd-ce   63.700     128.050   same as cc-cd-cf, penalty score=  0.8
+ce-cd-nc   68.100     121.700   same as cf-cd-nc, penalty score=  0.8
+
+DIHE
+c3-ce-n2-c3   2    1.600       180.000           2.000      same as X -ce-ne-X , penalty score=160.5
+ca-ca-ce-c3   4    2.800       180.000           2.000      same as X -c2-ca-X , penalty score=237.0
+ca-c3-ce-n2   6    0.000         0.000           3.000      same as X -c3-cc-X , penalty score=136.0
+ca-c3-ce-ca   6    0.000         0.000           3.000      same as X -c3-cc-X , penalty score=136.0
+c3-c3-ce-n2   6    0.000         0.000           3.000      same as X -c3-cc-X , penalty score=136.0
+c3-c3-ce-ca   6    0.000         0.000           3.000      same as X -c3-cc-X , penalty score=136.0
+ca-ca-ce-n2   4    2.800       180.000           2.000      same as X -c2-ca-X , penalty score=237.0
+cd-cc-ce-ca   4    4.000       180.000           2.000      same as X -ce-ce-X , penalty score=136.0
+na-cc-ce-ca   4    4.000       180.000           2.000      same as X -ce-ce-X , penalty score=136.0
+cc-cd-ce-ca   4   26.600       180.000           2.000      same as X -ce-cf-X , penalty score=136.0
+nc-cd-ce-ca   4   26.600       180.000           2.000      same as X -ce-cf-X , penalty score=136.0
+ca-ca-ce-cc   4    2.800       180.000           2.000      same as X -c2-ca-X , penalty score=237.0
+ca-ca-ce-cd   4    2.800       180.000           2.000      same as X -c2-ca-X , penalty score=237.0
+ca-ce-n2-c3   2    1.600       180.000           2.000      same as X -ce-ne-X , penalty score=160.5
+cc-cd-ce-cc   4   26.600       180.000           2.000      same as X -ce-cf-X , penalty score=136.0
+nc-cd-ce-cc   4   26.600       180.000           2.000      same as X -ce-cf-X , penalty score=136.0
+cd-cc-ce-ha   4    4.000       180.000           2.000      same as X -ce-ce-X , penalty score=136.0
+cd-cc-ce-cd   4    4.000       180.000           2.000      same as X -ce-ce-X , penalty score=136.0
+cd-cd-ce-cc   4   26.600       180.000           2.000      same as X -ce-cf-X , penalty score=136.0
+nd-cd-ce-cc   4   26.600       180.000           2.000      same as X -ce-cf-X , penalty score=136.0
+na-cc-ce-ha   4    4.000       180.000           2.000      same as X -ce-ce-X , penalty score=136.0
+na-cc-ce-cd   4    4.000       180.000           2.000      same as X -ce-ce-X , penalty score=136.0
+cd-cd-ce-ha   4   26.600       180.000           2.000      same as X -ce-cf-X , penalty score=136.0
+nd-cd-ce-ha   4   26.600       180.000           2.000      same as X -ce-cf-X , penalty score=136.0
+cc-cc-ce-cd   4    4.000       180.000           2.000      same as X -ce-ce-X , penalty score=136.0
+cc-cc-ce-ca   4    4.000       180.000           2.000      same as X -ce-ce-X , penalty score=136.0
+na-cd-ce-cc   4   26.600       180.000           2.000      same as X -ce-cf-X , penalty score=136.0
+nd-cc-ce-cd   4    4.000       180.000           2.000      same as X -ce-ce-X , penalty score=136.0
+nd-cc-ce-ca   4    4.000       180.000           2.000      same as X -ce-ce-X , penalty score=136.0
+cc-cc-cf-ha   4   16.000       180.000           2.000      same as X -cc-cd-X , penalty score=136.0
+cc-cc-cf-cd   4   16.000       180.000           2.000      same as X -cc-cd-X , penalty score=136.0
+cd-cd-cf-cc   4    4.000       180.000           2.000      same as X -cf-cf-X , penalty score=136.0
+nc-cd-cf-cc   4    4.000       180.000           2.000      same as X -cf-cf-X , penalty score=136.0
+na-cc-cf-ha   4   16.000       180.000           2.000      same as X -cc-cd-X , penalty score=136.0
+na-cc-cf-cd   4   16.000       180.000           2.000      same as X -cc-cd-X , penalty score=136.0
+cd-cd-cf-ha   4    4.000       180.000           2.000      same as X -cf-cf-X , penalty score=136.0
+nc-cd-cf-ha   4    4.000       180.000           2.000      same as X -cf-cf-X , penalty score=136.0
+cd-cd-ce-ca   4   26.600       180.000           2.000      same as X -ce-cf-X , penalty score=136.0
+na-cd-ce-ca   4   26.600       180.000           2.000      same as X -ce-cf-X , penalty score=136.0
+ca-ca-ce-ha   4    2.800       180.000           2.000      same as X -c2-ca-X , penalty score=237.0
+ca-ca-ce-cf   4    2.800       180.000           2.000      same as X -c2-ca-X , penalty score=237.0
+hc-c3-cf-cf   1    0.380       180.000          -3.000      same as hc-c3-c2-c2
+hc-c3-cf-cf   1    0.000         0.000          -2.000      same as hc-c3-c2-c2
+hc-c3-cf-cf   1    1.150         0.000           1.000      same as hc-c3-c2-c2, penalty score=324.0
+hc-c3-cf-ce   1    0.380       180.000          -3.000      same as hc-c3-c2-c2
+hc-c3-cf-ce   1    0.000         0.000          -2.000      same as hc-c3-c2-c2
+hc-c3-cf-ce   1    1.150         0.000           1.000      same as hc-c3-c2-c2, penalty score=324.0
+hc-c3-ce-cf   1    0.380       180.000          -3.000      same as hc-c3-c2-c2
+hc-c3-ce-cf   1    0.000         0.000          -2.000      same as hc-c3-c2-c2
+hc-c3-ce-cf   1    1.150         0.000           1.000      same as hc-c3-c2-c2, penalty score=324.0
+hc-c3-ce-ce   1    0.380       180.000          -3.000      same as hc-c3-c2-c2
+hc-c3-ce-ce   1    0.000         0.000          -2.000      same as hc-c3-c2-c2
+hc-c3-ce-ce   1    1.150         0.000           1.000      same as hc-c3-c2-c2, penalty score=324.0
+c3-c3-cf-cf   6    0.000         0.000           3.000      same as X -c3-cd-X , penalty score=136.0
+c3-c3-cf-c2   6    0.000         0.000           3.000      same as X -c3-cd-X , penalty score=136.0
+
+IMPROPER
+ca-ca-ca-ca         1.1          180.0         2.0          Same as c2-ca-ca-ca, penalty score= 31.1)
+c3-ca-ce-n2         1.1          180.0         2.0          Using the default value
+ca-ca-ca-ce         1.1          180.0         2.0          Same as ca-ca-ca-ca, penalty score= 30.8)
+ca-ca-ca-ha         1.1          180.0         2.0          Using general improper torsional angle  X- X-ca-ha, penalty score=  6.0)
+ca-cc-ce-cd         1.1          180.0         2.0          Same as ca-ca-ca-ce, penalty score=350.1)
+cd-ce-cc-na         1.1          180.0         2.0          Using the default value
+cc-cd-cd-ha         1.1          180.0         2.0          Using the default value
+cc-cc-na-hn         1.1          180.0         2.0          Using general improper torsional angle  X- X-na-hn, penalty score=  6.0)
+cc-cd-ce-ha         1.1          180.0         2.0          Using the default value
+cd-ce-cd-nd         1.1          180.0         2.0          Using the default value
+cc-cd-cc-ha         1.1          180.0         2.0          Using the default value
+cc-ce-cc-nd         1.1          180.0         2.0          Using the default value
+cd-ce-cd-na         1.1          180.0         2.0          Same as cd-ce-cc-na, penalty score=197.4)
+cc-cf-cc-na         1.1          180.0         2.0          Using the default value
+cc-cd-na-hn         1.1          180.0         2.0          Using general improper torsional angle  X- X-na-hn, penalty score=  6.0)
+cc-cd-cf-ha         1.1          180.0         2.0          Using the default value
+cd-cf-cd-nc         1.1          180.0         2.0          Same as cd-ce-cd-nd, penalty score= 53.1)
+cd-cd-cc-ha         1.1          180.0         2.0          Using the default value
+cc-ce-cd-nc         1.1          180.0         2.0          Same as cd-cf-cd-nc, penalty score= 38.4)
+ca-ca-ca-n          1.1          180.0         2.0          Same as cc-cf-cc-na, penalty score=306.0)
+c -ca-n -hn         1.1          180.0         2.0          Using general improper torsional angle  X- X- n-hn, penalty score=  6.0)
+ca-n -c -o         10.5          180.0         2.0          Using general improper torsional angle  X- X- c- o, penalty score=  6.0)
+c -ca-ca-ca         1.1          180.0         2.0          Same as c2-ca-ca-ca, penalty score= 36.1)
+ca-cf-ce-ha         1.1          180.0         2.0          Using the default value
+ce-cf-cf-ha         1.1          180.0         2.0          Using the default value
+c3-ce-cf-cf         1.1          180.0         2.0          Using the default value
+ce-cf-ce-ha         1.1          180.0         2.0          Using the default value
+c3-ce-ce-cf         1.1          180.0         2.0          Using the default value
+c2-c3-cf-cf         1.1          180.0         2.0          Using the default value
+c3-c3-c2-cf         1.1          180.0         2.0          Using the default value
+
+NONBON
+
+
+

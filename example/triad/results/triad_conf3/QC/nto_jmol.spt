@@ -1,0 +1,211 @@
+load MOs.mld FILTER "nosort"
+mo titleformat ""
+
+background white
+mo fill
+mo cutoff 0.04
+
+mo color blue red
+mo [ -0.930 450 -0.225 448]
+write image pngt "NTOes_1_1o_0.24.png"
+mo color orange green
+mo [ 0.821 458 0.475 459]
+write image pngt "NTOes_1_1v_0.24.png"
+
+mo color blue red
+mo [ 0.958 455 -0.201 450]
+write image pngt "NTOes_2_1o_0.21.png"
+mo color orange green
+mo [ 0.734 456 -0.557 458 -0.327 459]
+write image pngt "NTOes_2_1v_0.21.png"
+
+mo color blue red
+mo [ 0.996 449]
+write image pngt "NTOes_3_1o_0.23.png"
+mo color orange green
+mo [ 0.970 456 0.220 457]
+write image pngt "NTOes_3_1v_0.23.png"
+
+mo color blue red
+mo [ 0.997 449]
+write image pngt "NTOes_4_1o_0.23.png"
+mo color orange green
+mo [ -0.968 457 0.239 456]
+write image pngt "NTOes_4_1v_0.23.png"
+
+mo color blue red
+mo [ 0.978 455]
+write image pngt "NTOes_5_1o_0.15.png"
+mo color orange green
+mo [ 0.654 462 -0.628 456 -0.351 458]
+write image pngt "NTOes_5_1v_0.15.png"
+mo color blue red
+mo [ 0.966 452]
+write image pngt "NTOes_5_2o_0.10.png"
+mo color orange green
+mo [ 0.782 458 0.457 459 -0.316 456 0.252 462]
+write image pngt "NTOes_5_2v_0.10.png"
+
+mo color blue red
+mo [ 0.965 455 0.239 452]
+write image pngt "NTOes_6_1o_0.20.png"
+mo color orange green
+mo [ 0.681 458 0.435 456 0.385 457 0.336 459 0.266 462]
+write image pngt "NTOes_6_1v_0.20.png"
+
+mo color blue red
+mo [ -0.989 455]
+write image pngt "NTOes_7_1o_0.24.png"
+mo color orange green
+mo [ -0.935 457 0.231 458 0.214 459]
+write image pngt "NTOes_7_1v_0.24.png"
+
+mo color blue red
+mo [ 0.963 447]
+write image pngt "NTOes_8_1o_0.23.png"
+mo color orange green
+mo [ -0.991 456]
+write image pngt "NTOes_8_1v_0.23.png"
+
+mo color blue red
+mo [ 0.868 447 0.454 445]
+write image pngt "NTOes_9_1o_0.24.png"
+mo color orange green
+mo [ 0.990 457]
+write image pngt "NTOes_9_1v_0.24.png"
+
+mo color blue red
+mo [ 0.768 445 0.554 442 -0.217 447]
+write image pngt "NTOes_10_1o_0.22.png"
+mo color orange green
+mo [ -0.748 457 -0.651 456]
+write image pngt "NTOes_10_1v_0.22.png"
+
+mo color blue red
+mo [ 0.950 448 -0.228 446]
+write image pngt "NTOes_11_1o_0.24.png"
+mo color orange green
+mo [ 0.828 458 0.477 459]
+write image pngt "NTOes_11_1v_0.24.png"
+
+mo color blue red
+mo [ -0.871 445 -0.402 442]
+write image pngt "NTOes_12_1o_0.20.png"
+mo color orange green
+mo [ 0.733 457 -0.664 456]
+write image pngt "NTOes_12_1v_0.20.png"
+
+mo color blue red
+mo [ 0.700 442 -0.622 445 -0.258 443 -0.219 447]
+write image pngt "NTOes_13_1o_0.21.png"
+mo color orange green
+mo [ -0.993 456]
+write image pngt "NTOes_13_1v_0.21.png"
+
+mo color blue red
+mo [ -0.830 442 -0.324 447 0.306 445 0.300 443]
+write image pngt "NTOes_14_1o_0.21.png"
+mo color orange green
+mo [ 0.991 457]
+write image pngt "NTOes_14_1v_0.21.png"
+
+mo color blue red
+mo [ -0.825 441 0.352 442 -0.286 449]
+write image pngt "NTOes_15_1o_0.13.png"
+mo color orange green
+mo [ -0.878 456 0.333 457 -0.247 458 0.225 459]
+write image pngt "NTOes_15_1v_0.13.png"
+mo color blue red
+mo [ 0.757 449 0.532 447 -0.252 441 0.250 442]
+write image pngt "NTOes_15_2o_0.10.png"
+mo color orange green
+mo [ -0.830 459 0.445 458 -0.258 456 0.207 457]
+write image pngt "NTOes_15_2v_0.10.png"
+
+mo color blue red
+mo [ 0.990 455]
+write image pngt "NTOes_16_1o_0.25.png"
+mo color orange green
+mo [ 0.858 459 -0.488 458]
+write image pngt "NTOes_16_1v_0.25.png"
+
+mo color blue red
+mo [ -0.688 441 0.524 449 -0.365 442 -0.232 445]
+write image pngt "NTOes_17_1o_0.13.png"
+mo color orange green
+mo [ 0.818 456 -0.416 459 0.351 458]
+write image pngt "NTOes_17_1v_0.13.png"
+mo color blue red
+mo [ 0.791 449 0.449 441 -0.308 447 0.213 442]
+write image pngt "NTOes_17_2o_0.11.png"
+mo color orange green
+mo [ -0.738 459 -0.531 456 0.390 458]
+write image pngt "NTOes_17_2v_0.11.png"
+
+mo color blue red
+mo [ -0.793 445 0.596 447]
+write image pngt "NTOes_18_1o_0.21.png"
+mo color orange green
+mo [ 0.842 459 -0.488 458 -0.215 457]
+write image pngt "NTOes_18_1v_0.21.png"
+
+mo color blue red
+mo [ -0.873 442 0.306 443 0.261 447 0.226 445]
+write image pngt "NTOes_19_1o_0.23.png"
+mo color orange green
+mo [ 0.858 459 -0.504 458]
+write image pngt "NTOes_19_1v_0.23.png"
+
+mo color blue red
+mo [ 0.676 447 0.634 445 0.339 442]
+write image pngt "NTOes_20_1o_0.20.png"
+mo color orange green
+mo [ 0.852 459 -0.507 458]
+write image pngt "NTOes_20_1v_0.20.png"
+
+mo color blue red
+mo [ -0.986 454]
+write image pngt "NTOes_21_1o_0.25.png"
+mo color orange green
+mo [ -0.999 456]
+write image pngt "NTOes_21_1v_0.25.png"
+
+mo color blue red
+mo [ -0.953 441]
+write image pngt "NTOes_22_1o_0.22.png"
+mo color orange green
+mo [ 0.966 457 0.253 456]
+write image pngt "NTOes_22_1v_0.22.png"
+
+mo color blue red
+mo [ 0.987 454]
+write image pngt "NTOes_23_1o_0.25.png"
+mo color orange green
+mo [ 0.999 457]
+write image pngt "NTOes_23_1v_0.25.png"
+
+mo color blue red
+mo [ 0.858 450 0.415 455 0.255 448]
+write image pngt "NTOes_24_1o_0.19.png"
+mo color orange green
+mo [ 0.975 462]
+write image pngt "NTOes_24_1v_0.19.png"
+mo color blue red
+mo [ -0.773 452 -0.375 438 -0.304 446 -0.201 437]
+write image pngt "NTOes_24_2o_0.05.png"
+mo color orange green
+mo [ 0.753 458 -0.448 456 0.432 459]
+write image pngt "NTOes_24_2v_0.05.png"
+
+mo color blue red
+mo [ 0.982 454]
+write image pngt "NTOes_25_1o_0.14.png"
+mo color orange green
+mo [ -0.984 463]
+write image pngt "NTOes_25_1v_0.14.png"
+mo color blue red
+mo [ -0.988 455]
+write image pngt "NTOes_25_2o_0.07.png"
+mo color orange green
+mo [ -0.904 466 0.270 462]
+write image pngt "NTOes_25_2v_0.07.png"

@@ -1,0 +1,17 @@
+
+running a equilibriation run  on  NVT trajectory
+ &cntrl
+   igb = 0, imin = 0, ntx = 5, irest = 1,
+   ntb = 1, cut = 9,
+   ntpr = 1000, ntwx = 1000, ntwr = 20000,
+   nstlim = 500000, dt = MYDT,
+   ntc = 2, ntf = 2, iwrap = 1,
+   ntt = 3, gamma_ln=1.0,
+   tempi = TARTEMP, temp0 = TARTEMP,
+   tautp = 0.5, ig = -1, vlimit = 10.0,
+   nmropt = 0,
+   ipol   = 0,
+   ntr = 1,
+   restraint_wt = 100,
+   restraintmask = ':1',
+ /

@@ -1,0 +1,3 @@
+parm /gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/MD//DBP-C70_conf11_DBPC70_CT2.prmtop  
+trajin DBP-C70_conf11_prod_NVE_1.mdcrd.nc
+esander CT2 out DBP-C70_conf11_REC_CT2_LE_NVE_1.dat ntb 1 cut 9 ntf 2 ntc 2

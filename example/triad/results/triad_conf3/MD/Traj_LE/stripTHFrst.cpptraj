@@ -1,0 +1,5 @@
+parm /gpfsnyu/xspace/projects/PCT-example/triad/results/triad_conf3/MD//triad_conf3_THF_LE.prmtop
+trajin /gpfsnyu/xspace/projects/PCT-example/triad/results/triad_conf3/MD//Traj_LE/triad_conf3_NVT_0.rst
+autoimage
+strip :THF
+trajout triad_conf3_noTHF_NVT_0.rst

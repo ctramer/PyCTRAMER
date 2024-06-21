@@ -1,0 +1,6 @@
+parm /gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/MD//DBP-C70_conf11_DBPC70_LE.prmtop
+trajin /gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/MD//Traj_LE/DBP-C70_conf11_NVT_0.rst
+autoimage
+strip :DBP
+strip :C70
+trajout DBP-C70_conf11_noDBPC70_NVT_0.rst

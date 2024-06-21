@@ -1,0 +1,21 @@
+Excited state order  0
+Excited state order  1.879
+Excited state order  1.926
+Excited state order  2.388
+
+GR 0
+LE 1.879
+CT1 1.926
+CT2 2.388
+
+Excited state energies in eV  
+Excited energy of the state GR is 0 eV. 
+Excited energy of the state LE is 1.879 eV. 
+Excited energy of the state CT1 is 1.926 eV. 
+Excited energy of the state CT2 is 2.388 eV. 
+
+diabatic coupling in eV  Coupling between transition of LE-CT1 is -0.01467393 eV. 
+ Coupling between transition of LE-CT2 is 0.007201061 eV. 
+ Rates in Hz  Marcus rates at 300K between transition of LE-CT1 is 0.04064928310117691 THz. 
+ Marcus rates at 300K between transition of LE-CT2 is 1.2932174569893309 THz. 
+ 

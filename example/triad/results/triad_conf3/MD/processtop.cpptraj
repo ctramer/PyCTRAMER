@@ -1,0 +1,3 @@
+parm triad_conf3_THF_CT2.prmtop
+parmstrip :THF
+parmwrite out triad_conf3_noTHF_CT2.prmtop

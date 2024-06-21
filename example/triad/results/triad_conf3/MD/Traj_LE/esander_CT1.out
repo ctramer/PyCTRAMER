@@ -1,0 +1,285 @@
+
+CPPTRAJ: Trajectory Analysis. V6.18.1 (AmberTools) MPI
+    ___  ___  ___  ___
+     | \/ | \/ | \/ | 
+    _|_/\_|_/\_|_/\_|_
+
+| Running on 96 processes.
+| Date/time: 06/21/24 03:51:42
+| Available memory: 369.947 GB
+
+INPUT: Reading input from 'esander_CT1.in'
+  [parm /gpfsnyu/xspace/projects/PCT-example/triad/results/triad_conf3/MD//triad_conf3_THF_CT1.prmtop]
+	Reading '/gpfsnyu/xspace/projects/PCT-example/triad/results/triad_conf3/MD//triad_conf3_THF_CT1.prmtop' as Amber Topology
+	Radius Set: modified Bondi radii (mbondi)
+  [trajin triad_conf3_prod_NVE_1.mdcrd.nc]
+	Reading 'triad_conf3_prod_NVE_1.mdcrd.nc' as Amber NetCDF
+  [esander CT1 out triad_conf3_REC_CT1_LE_NVE_1.dat ntb 1 cut 9 ntf 2 ntc 2]
+    ESANDER: Calculating energy using Sander.
+	Temporary topology file name is 'cpptrajtmp0'
+	Reference for initialization will be first frame.
+---------- RUN BEGIN -------------------------------------------------
+
+PARAMETER FILES (1 total):
+ 0: triad_conf3_THF_CT1.prmtop, 35307 atoms, 2701 res, box: Orthorhombic, 2701 mol
+
+INPUT TRAJECTORIES (1 total):
+ 0: 'triad_conf3_prod_NVE_1.mdcrd.nc' is a NetCDF (NetCDF3) AMBER trajectory with coordinates, time, box, Parm triad_conf3_THF_CT1.prmtop (Orthorhombic box) (reading 20000 of 20000)
+  Coordinate processing will occur on 20000 frames.
+
+PARALLEL INFO:
+  Process 0 will handle 209 frames.
+  Process 1 will handle 209 frames.
+  Process 2 will handle 209 frames.
+  Process 3 will handle 209 frames.
+  Process 4 will handle 209 frames.
+  Process 5 will handle 209 frames.
+  Process 6 will handle 209 frames.
+  Process 7 will handle 209 frames.
+  Process 8 will handle 209 frames.
+  Process 9 will handle 209 frames.
+  Process 10 will handle 209 frames.
+  Process 11 will handle 209 frames.
+  Process 12 will handle 209 frames.
+  Process 13 will handle 209 frames.
+  Process 14 will handle 209 frames.
+  Process 15 will handle 209 frames.
+  Process 16 will handle 209 frames.
+  Process 17 will handle 209 frames.
+  Process 18 will handle 209 frames.
+  Process 19 will handle 209 frames.
+  Process 20 will handle 209 frames.
+  Process 21 will handle 209 frames.
+  Process 22 will handle 209 frames.
+  Process 23 will handle 209 frames.
+  Process 24 will handle 209 frames.
+  Process 25 will handle 209 frames.
+  Process 26 will handle 209 frames.
+  Process 27 will handle 209 frames.
+  Process 28 will handle 209 frames.
+  Process 29 will handle 209 frames.
+  Process 30 will handle 209 frames.
+  Process 31 will handle 209 frames.
+  Process 32 will handle 208 frames.
+  Process 33 will handle 208 frames.
+  Process 34 will handle 208 frames.
+  Process 35 will handle 208 frames.
+  Process 36 will handle 208 frames.
+  Process 37 will handle 208 frames.
+  Process 38 will handle 208 frames.
+  Process 39 will handle 208 frames.
+  Process 40 will handle 208 frames.
+  Process 41 will handle 208 frames.
+  Process 42 will handle 208 frames.
+  Process 43 will handle 208 frames.
+  Process 44 will handle 208 frames.
+  Process 45 will handle 208 frames.
+  Process 46 will handle 208 frames.
+  Process 47 will handle 208 frames.
+  Process 48 will handle 208 frames.
+  Process 49 will handle 208 frames.
+  Process 50 will handle 208 frames.
+  Process 51 will handle 208 frames.
+  Process 52 will handle 208 frames.
+  Process 53 will handle 208 frames.
+  Process 54 will handle 208 frames.
+  Process 55 will handle 208 frames.
+  Process 56 will handle 208 frames.
+  Process 57 will handle 208 frames.
+  Process 58 will handle 208 frames.
+  Process 59 will handle 208 frames.
+  Process 60 will handle 208 frames.
+  Process 61 will handle 208 frames.
+  Process 62 will handle 208 frames.
+  Process 63 will handle 208 frames.
+  Process 64 will handle 208 frames.
+  Process 65 will handle 208 frames.
+  Process 66 will handle 208 frames.
+  Process 67 will handle 208 frames.
+  Process 68 will handle 208 frames.
+  Process 69 will handle 208 frames.
+  Process 70 will handle 208 frames.
+  Process 71 will handle 208 frames.
+  Process 72 will handle 208 frames.
+  Process 73 will handle 208 frames.
+  Process 74 will handle 208 frames.
+  Process 75 will handle 208 frames.
+  Process 76 will handle 208 frames.
+  Process 77 will handle 208 frames.
+  Process 78 will handle 208 frames.
+  Process 79 will handle 208 frames.
+  Process 80 will handle 208 frames.
+  Process 81 will handle 208 frames.
+  Process 82 will handle 208 frames.
+  Process 83 will handle 208 frames.
+  Process 84 will handle 208 frames.
+  Process 85 will handle 208 frames.
+  Process 86 will handle 208 frames.
+  Process 87 will handle 208 frames.
+  Process 88 will handle 208 frames.
+  Process 89 will handle 208 frames.
+  Process 90 will handle 208 frames.
+  Process 91 will handle 208 frames.
+  Process 92 will handle 208 frames.
+  Process 93 will handle 208 frames.
+  Process 94 will handle 208 frames.
+  Process 95 will handle 208 frames.
+.....................................................
+ACTION SETUP FOR PARM 'triad_conf3_THF_CT1.prmtop' (1 actions):
+  0: [esander CT1 out triad_conf3_REC_CT1_LE_NVE_1.dat ntb 1 cut 9 ntf 2 ntc 2]
+
+BEGIN PARALLEL TRAJECTORY PROCESSING:
+	Writing topology 0 (triad_conf3_THF_CT1.prmtop) to 'cpptrajtmp0' with format Amber Topology
+	Memory used by full exclusion list: 718.000 kB
+    SANDER INPUT OPTIONS:
+      extdiel=  78.50  intdiel=   1.00  rgbmax=   25.00  saltcon=   0.00  cut=      9.00
+      dielc=     1.00  rdt=       0.00  fswitch=  -1.00  igb=          0  alpb=        0
+      gbsa=         0  ntb=          1  lj1264=      -1  ipb=          0  inp=         2
+      vdwmeth=      1  ew_type=      0  ifqnt=        0  jfastw=       0  ntf=         2
+      ntc=          2
+	Saving the following energy terms:
+	  Total in 'CT1[total]'
+	  VDW in 'CT1[vdw]'
+	  Elec in 'CT1[elec]'
+	  Bond in 'CT1[bond]'
+	  Angle in 'CT1[angle]'
+	  Dihedral in 'CT1[dihedral]'
+	  VDW14 in 'CT1[vdw14]'
+	  Elec14 in 'CT1[elec14]'
+ 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100% Complete.
+TIME: Rank 0 throughput= 1.6628 frames / second.
+TIME: Rank 1 throughput= 1.6705 frames / second.
+TIME: Rank 2 throughput= 1.6647 frames / second.
+TIME: Rank 3 throughput= 1.6657 frames / second.
+TIME: Rank 4 throughput= 1.6636 frames / second.
+TIME: Rank 5 throughput= 1.6679 frames / second.
+TIME: Rank 6 throughput= 1.6691 frames / second.
+TIME: Rank 7 throughput= 1.6634 frames / second.
+TIME: Rank 8 throughput= 1.6637 frames / second.
+TIME: Rank 9 throughput= 1.6657 frames / second.
+TIME: Rank 10 throughput= 1.6636 frames / second.
+TIME: Rank 11 throughput= 1.6675 frames / second.
+TIME: Rank 12 throughput= 1.6634 frames / second.
+TIME: Rank 13 throughput= 1.6722 frames / second.
+TIME: Rank 14 throughput= 1.6637 frames / second.
+TIME: Rank 15 throughput= 1.6636 frames / second.
+TIME: Rank 16 throughput= 1.6697 frames / second.
+TIME: Rank 17 throughput= 1.6709 frames / second.
+TIME: Rank 18 throughput= 1.6710 frames / second.
+TIME: Rank 19 throughput= 1.6697 frames / second.
+TIME: Rank 20 throughput= 1.6718 frames / second.
+TIME: Rank 21 throughput= 1.6713 frames / second.
+TIME: Rank 22 throughput= 1.6643 frames / second.
+TIME: Rank 23 throughput= 1.6635 frames / second.
+TIME: Rank 24 throughput= 1.6765 frames / second.
+TIME: Rank 25 throughput= 1.6951 frames / second.
+TIME: Rank 26 throughput= 1.6855 frames / second.
+TIME: Rank 27 throughput= 1.6889 frames / second.
+TIME: Rank 28 throughput= 1.6849 frames / second.
+TIME: Rank 29 throughput= 1.6883 frames / second.
+TIME: Rank 30 throughput= 1.6954 frames / second.
+TIME: Rank 31 throughput= 1.6898 frames / second.
+TIME: Rank 32 throughput= 1.6935 frames / second.
+TIME: Rank 33 throughput= 1.6910 frames / second.
+TIME: Rank 34 throughput= 1.6912 frames / second.
+TIME: Rank 35 throughput= 1.6887 frames / second.
+TIME: Rank 36 throughput= 1.6879 frames / second.
+TIME: Rank 37 throughput= 1.6935 frames / second.
+TIME: Rank 38 throughput= 1.6926 frames / second.
+TIME: Rank 39 throughput= 1.6851 frames / second.
+TIME: Rank 40 throughput= 1.6895 frames / second.
+TIME: Rank 41 throughput= 1.6876 frames / second.
+TIME: Rank 42 throughput= 1.6873 frames / second.
+TIME: Rank 43 throughput= 1.6861 frames / second.
+TIME: Rank 44 throughput= 1.6926 frames / second.
+TIME: Rank 45 throughput= 1.6911 frames / second.
+TIME: Rank 46 throughput= 1.6947 frames / second.
+TIME: Rank 47 throughput= 1.6858 frames / second.
+TIME: Rank 48 throughput= 1.6949 frames / second.
+TIME: Rank 49 throughput= 1.6950 frames / second.
+TIME: Rank 50 throughput= 1.6962 frames / second.
+TIME: Rank 51 throughput= 1.6875 frames / second.
+TIME: Rank 52 throughput= 1.6988 frames / second.
+TIME: Rank 53 throughput= 1.6968 frames / second.
+TIME: Rank 54 throughput= 1.6972 frames / second.
+TIME: Rank 55 throughput= 1.6955 frames / second.
+TIME: Rank 56 throughput= 1.6961 frames / second.
+TIME: Rank 57 throughput= 1.7024 frames / second.
+TIME: Rank 58 throughput= 1.7033 frames / second.
+TIME: Rank 59 throughput= 1.6968 frames / second.
+TIME: Rank 60 throughput= 1.6961 frames / second.
+TIME: Rank 61 throughput= 1.7036 frames / second.
+TIME: Rank 62 throughput= 1.7037 frames / second.
+TIME: Rank 63 throughput= 1.7043 frames / second.
+TIME: Rank 64 throughput= 1.7010 frames / second.
+TIME: Rank 65 throughput= 1.7033 frames / second.
+TIME: Rank 66 throughput= 1.6989 frames / second.
+TIME: Rank 67 throughput= 1.6959 frames / second.
+TIME: Rank 68 throughput= 1.7040 frames / second.
+TIME: Rank 69 throughput= 1.7028 frames / second.
+TIME: Rank 70 throughput= 1.6993 frames / second.
+TIME: Rank 71 throughput= 1.6954 frames / second.
+TIME: Rank 72 throughput= 1.6635 frames / second.
+TIME: Rank 73 throughput= 1.6661 frames / second.
+TIME: Rank 74 throughput= 1.6673 frames / second.
+TIME: Rank 75 throughput= 1.6659 frames / second.
+TIME: Rank 76 throughput= 1.6659 frames / second.
+TIME: Rank 77 throughput= 1.6505 frames / second.
+TIME: Rank 78 throughput= 1.6646 frames / second.
+TIME: Rank 79 throughput= 1.6733 frames / second.
+TIME: Rank 80 throughput= 1.6686 frames / second.
+TIME: Rank 81 throughput= 1.6797 frames / second.
+TIME: Rank 82 throughput= 1.6652 frames / second.
+TIME: Rank 83 throughput= 1.6687 frames / second.
+TIME: Rank 84 throughput= 1.6647 frames / second.
+TIME: Rank 85 throughput= 1.6540 frames / second.
+TIME: Rank 86 throughput= 1.6679 frames / second.
+TIME: Rank 87 throughput= 1.6651 frames / second.
+TIME: Rank 88 throughput= 1.6719 frames / second.
+TIME: Rank 89 throughput= 1.6751 frames / second.
+TIME: Rank 90 throughput= 1.6655 frames / second.
+TIME: Rank 91 throughput= 1.6726 frames / second.
+TIME: Rank 92 throughput= 1.6687 frames / second.
+TIME: Rank 93 throughput= 1.6726 frames / second.
+TIME: Rank 94 throughput= 1.6665 frames / second.
+TIME: Rank 95 throughput= 1.6676 frames / second.
+TIME: Avg. throughput= 158.6988 frames / second.
+
+ACTION OUTPUT:
+Warning: Analysis does not currently use multiple MPI processes.
+TIME: Analyses took 0.0000 seconds.
+
+DATASETS (8 total):
+	CT1[total] "CT1[total]" (double), size is 20000 (160.000 kB)
+	CT1[vdw] "CT1[vdw]" (double), size is 20000 (160.000 kB)
+	CT1[elec] "CT1[elec]" (double), size is 20000 (160.000 kB)
+	CT1[bond] "CT1[bond]" (double), size is 20000 (160.000 kB)
+	CT1[angle] "CT1[angle]" (double), size is 20000 (160.000 kB)
+	CT1[dihedral] "CT1[dihedral]" (double), size is 20000 (160.000 kB)
+	CT1[vdw14] "CT1[vdw14]" (double), size is 20000 (160.000 kB)
+	CT1[elec14] "CT1[elec14]" (double), size is 20000 (160.000 kB)
+    Total data set memory usage is at least 1.280 MB
+
+DATAFILES (1 total):
+  triad_conf3_REC_CT1_LE_NVE_1.dat (Standard Data File):  CT1[total] CT1[vdw] CT1[elec] CT1[bond] CT1[angle] CT1[dihedral] CT1[vdw14] CT1[elec14]
+
+RUN TIMING:
+TIME:		Init               : 0.0116 s (  0.01%)
+TIME:		Trajectory Process : 126.0249 s ( 99.88%)
+TIME:		Data Set Sync      : 0.0033 s (  0.00%)
+TIME:		Action Post        : 0.0000 s (  0.00%)
+TIME:		Analysis           : 0.0000 s (  0.00%)
+TIME:		Data File Write    : 0.1293 s (  0.10%)
+TIME:		Other              : 0.0083 s (  0.00%)
+TIME:	Run Total 126.1775 s
+---------- RUN END ---------------------------------------------------
+TIME: Total execution time: 126.5870 seconds.
+--------------------------------------------------------------------------------
+To cite CPPTRAJ use:
+Daniel R. Roe and Thomas E. Cheatham, III, "PTRAJ and CPPTRAJ: Software for
+  Processing and Analysis of Molecular Dynamics Trajectory Data". J. Chem.
+  Theory Comput., 2013, 9 (7), pp 3084-3095.
+Daniel R. Roe and Thomas E. Cheatham, III, "Parallelization of CPPTRAJ enables
+  large scale analysis of molecular dynamics trajectory data". J. Comp.
+  Chem., 2018, DOI: 10.1002/jcc25382.
+

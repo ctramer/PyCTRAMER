@@ -1,0 +1,27 @@
+Heat
+ &cntrl
+  imin=0,
+  ntx=1,
+  irest=0,
+  nstlim=100000,
+  dt=0.0005, 
+  ntf=2,
+  ntc=2,
+  tempi=0.0,
+  temp0=300.0,
+  ntpr=1000,
+  ntwx=1000,
+  cut=9.0,
+  ntb=1,
+  ntp=0,
+  ntt=3,
+  gamma_ln=2.0,
+  nmropt=1,
+  ig=-1,
+  ntr = 1,
+  restraint_wt = 100,
+  restraintmask = ':1-2',
+ /
+&wt type='TEMP0', istep1=0, istep2=20000, value1=0.0, value2=300.0 /
+&wt type='TEMP0', istep1=20001, istep2=100000, value1=300.0, value2=300.0 /
+&wt type='END' /

@@ -1,0 +1,3 @@
+parm /gpfsnyu/xspace/projects/PCT-example/DBP-C70/results/DBP-C70_conf11/MD//DBP-C70_conf11_noDBPC70_CT4.prmtop  
+trajin DBP-C70_conf11_noDBPC70_NVT_0.rst
+esander CT4 out DBP-C70_conf11_GAS_CT4_LE_NVT.dat ntb 1 cut 9 ntf 2 ntc 2

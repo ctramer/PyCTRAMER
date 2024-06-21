@@ -1,0 +1,16 @@
+
+running trajectory NVE prod run for 1e5 steps  
+ &cntrl
+   igb = 0, imin = 0, ntx = 5, irest = 1,
+   ntb = 1, cut = 9,
+   ntpr = MYSAMPLESTEP, ntwx = MYSAMPLESTEP, ntwr = MYSAMPLESTEP,
+   nstlim = MYMDSTEP, dt = MYDT,
+   ntc = 2, ntf = 2, iwrap = 1,
+   ntt = 0, 
+   ioutfm=1,
+   nmropt = 0,
+   ipol   = 0,
+   ntr = 1,
+   restraint_wt = 100,
+   restraintmask = ':1-2',
+ /

@@ -1,0 +1,17 @@
+NPT eq
+ &cntrl
+   igb = 0, imin = 0, ntx = 5, irest = 1,
+   ntb = 2, 
+   cut = 9,
+   ntpr = 1000, ntwx = 1000, ntwr = 1000,
+   nstlim = 1200000, 
+   dt = 0.001,
+   ntc = 2, ntf = 2, iwrap = 1,
+   ntt = 3, gamma_ln=1.0,
+   tempi = 300.0, temp0 = 300.0,
+   ntp = 1, tautp = 0.5,
+   ig = -1, vlimit = 10.0,
+   nmropt = 0,
+   ipol   = 0,
+   restraintmask = ':1-2',
+ /

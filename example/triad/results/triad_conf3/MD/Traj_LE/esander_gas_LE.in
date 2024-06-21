@@ -1,0 +1,3 @@
+parm /gpfsnyu/xspace/projects/PCT-example/triad/results/triad_conf3/MD//triad_conf3_noTHF_LE.prmtop  
+trajin triad_conf3_noTHF_NVT_0.rst
+esander LE out triad_conf3_GAS_LE_LE_NVT.dat ntb 1 cut 9 ntf 2 ntc 2

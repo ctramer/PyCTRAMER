@@ -1,0 +1,20 @@
+## A triad molecule solvated in THF solvents with Box length of 70A 
+
+## All the atoms from different molecules will be separated at least 2.0
+
+tolerance 2.0
+
+# The file type and input type
+
+output original_set_80_THF.pdb
+filetype pdb
+structure original_set_80.pdb
+  number 1
+  centerofmass
+  fixed 35. 35. 35. 0. 0. 0.
+end structure
+
+structure THF.pdb
+  number 2700
+  inside box 0. 0. 0. 70. 70. 70.
+end structure
