@@ -576,7 +576,7 @@ def Find_CT_states_DA(data, LE_fragment, charge_frag_list, Max_CT_states, Includ
     Max_CT_states = int(Max_CT_states)
     # Criteria 2: energy ordering
     if len(CT_candidate) < Max_CT_states:
-        print('The number of CT states is less than the maximum number of CT states '+len(CT_candidate))
+        print('The number of CT states is less than the maximum number of CT states ',len(CT_candidate))
         CT_state_order = CT_candidate
     else:
         CT_state_order = CT_candidate[0:Max_CT_states]

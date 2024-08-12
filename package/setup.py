@@ -4,7 +4,7 @@ setuptools.setup(
 
     name="pyctramer",   # The file name of the package after packaging 
 
-    version="0.2.6",      # version number 
+    version="0.2.8",      # version number 
 
     author="Zengkui Liu, Dominikus Brian, and Xiang Sun",     # author name 
 
